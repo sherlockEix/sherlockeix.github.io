@@ -16,7 +16,6 @@ jobs:
           node-version: 14
       - name: Install Dependencies
         run: |
-          rm -rf package-lock.json
           npm install
       - name: Build
         run: |
@@ -25,6 +24,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GIT_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./public
           publish_branch: blog
