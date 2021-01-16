@@ -20,8 +20,7 @@ jobs:
       - name: Build
         run: |
           npm run build
-          echo $(ls -l)
-          cat public/index.html
+          ls -l public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
