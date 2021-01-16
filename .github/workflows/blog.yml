@@ -17,6 +17,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
+          hexo version
       - name: Build
         run: |
           npm run build
