@@ -104,8 +104,8 @@ theme: inside
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: git@github.com:g5niusx/sherlock.xie.blog.git
+  repo: https://github.com/sherlockEix/sherlockeix.github.io.git
   branch: main
   token: $ceshi
-  name: g5niusx
-  email: g5niusx@163.com
+  name: sherlockEix
+  email: sherlockEix@163.com
