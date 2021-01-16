@@ -17,6 +17,7 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
+          npm install -g hexo-cli
           hexo version
       - name: Build
         run: |
