@@ -10,18 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: themes/next
-
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 14
       - name: Install Dependencies
         run: |
-          npm install
           npm install -g hexo-cli
-          hexo version
+          cd themes/inside
+          npm install
+          cd ..
+          npm install
       - name: Build
         run: |
           ls -l themes/inside
