@@ -21,6 +21,7 @@ jobs:
           hexo version
       - name: Build
         run: |
+          ls -l themes/inside
           hexo generate
           ls -l public
       - name: Deploy
