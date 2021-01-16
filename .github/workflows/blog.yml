@@ -19,7 +19,7 @@ jobs:
           npm install -g hexo-cli
           cd themes/inside
           npm install
-          cd ..
+          cd ../..
           npm install
       - name: Build
         run: |
