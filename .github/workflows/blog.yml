@@ -16,14 +16,12 @@ jobs:
           node-version: 14
       - name: Install Dependencies
         run: |
-          echo "开始安装 hexo-cli"
-          npm install -g hexo-cli
           npm install
       - name: Build
         run: |
           npm run build
           echo $(ls -l)
-          cat index.html
+          cat public/index.html
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
