@@ -16,16 +16,13 @@ jobs:
           node-version: 14
       - name: Install Dependencies
         run: |
-          npm install -g hexo-cli
           cd themes/inside
           npm install
           cd ../..
           npm install
       - name: Build
         run: |
-          ls -l themes/inside
-          hexo generate
-          ls -l public
+          npm run build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
