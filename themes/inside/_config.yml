@@ -86,12 +86,12 @@ appearance:
 profile:
   # `email` is used for gravatar(https://en.gravatar.com),
   # fallback to `hexo.config.email` if not specified
-  email:
+  email: sherlockEix@163.com
 
   # You can set Avatar URL directly
   # avatar:
 
-  bio: Awesome guy.
+  bio: 代码与酒
 
 # Sidebar navigation links
 menu:
